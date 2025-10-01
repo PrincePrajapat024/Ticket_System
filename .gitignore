@@ -1,8 +1,9 @@
 # Node.js dependencies
 node_modules/
-
+backend/node_modules
 # Environment variables
 .env
+backend/.env
 
 # Logs
 logs
@@ -13,3 +14,5 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 .vscode/
+
+
