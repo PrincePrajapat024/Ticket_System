@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/admin-dashboard.css">
+    <!-- Load particles.js library for background animation -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- particles.js container -->
+    <div id="particles-js"></div> 
+    
+    <header class="admin-header">
+        <h1>Admin Dashboard 🎛️</h1>
+        <button id="logoutBtn" class="logout-btn">🚪 Logout</button>
+    </header>
+
+    <!-- Wrapper for centering and max-width on content -->
+    <div class="content-wrapper"> 
+        <h2>Create Event</h2>
+        
+        <form id="createEventForm">
+            <input type="text" id="title" placeholder="Event Title" required>
+            <textarea id="description" placeholder="Event Description"></textarea>
+            <input type="date" id="date" required>
+            <input type="time" id="time" required>
+            <input type="text" id="venue" placeholder="Venue" required>
+            <input type="number" id="total_seats" placeholder="Total Seats" required>
+            <button type="submit">Add Event</button>
+        </form>
+        
+
+        <h2>All Events</h2>
+        <div id="event-list" class="event-container"></div>
+    </div>
+    
+    <script src="js/admin-dashboard.js"></script>
+</body>
+</html>
